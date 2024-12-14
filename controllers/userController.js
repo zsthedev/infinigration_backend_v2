@@ -25,6 +25,8 @@ export const login = catchAsyncError(async (req, res, next) => {
   sendToken(res, user, `Welcome Back ${user.name}`, 200);
 });
 
+export const register = catchAsyncError(async (req, res, next) => {});
+
 export const logout = catchAsyncError(async (req, res, next) => {
   res
     .status(200)
